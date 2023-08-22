@@ -28,7 +28,7 @@ const YouTubeSearch = ({ apodTitle }) => {
       setVideo(response.data.items);
     } catch (error) {
       console.error("Error fetching video:", error);
-    }
+    };
   };
 
   return (
