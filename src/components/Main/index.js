@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {nasaApi } from "./config";
+import { nasaApi } from "./config";
 import YouTubeSearch from "../Youtube";
-
-
 const Main = () => {
   const [apodData, setApodData] = useState({});
-  const apiUrl =
-    `https://api.nasa.gov/planetary/apod?api_key=${nasaApi}`;
-    
+  const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${nasaApi}`;
   useEffect(() => {
     // Fetch data from NASA API
     fetch(apiUrl)
@@ -27,7 +23,7 @@ const Main = () => {
         {apodData.title}
       </h3>
       <p id="date" className="text-center">
-       Date:  {apodData.date}
+        Date: {apodData.date}
       </p>
       <p id="date" className="lead pt-5">
         {apodData.explanation}
@@ -36,16 +32,12 @@ const Main = () => {
         {apodData.media_type === "image" ? (
           <img src={apodData.url} alt={apodData.title} />
         ) : (
-          <iframe
-            title={apodData.title}
-            src={apodData.url}
-          />
+          <iframe title={apodData.title} src={apodData.url} />
         )}
         <p>Copyright: {apodData.copyright}</p>
       </div>
-      <YouTubeSearch apodTitle = {apodData.title}/>
+      <YouTubeSearch apodTitle={apodData.title} />
     </div>
-    
   );
 };
 
