@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/NASA/static/css/main.b8e83012.css",
+    "main.js": "/NASA/static/js/main.d711ed83.js",
+    "static/js/787.37980ae4.chunk.js": "/NASA/static/js/787.37980ae4.chunk.js",
+    "static/media/background.gif": "/NASA/static/media/background.a740f61dd79f1c9ae8a3.gif",
+    "static/media/astronauts.gif": "/NASA/static/media/astronauts.4843a1bd16e44e4cf50d.gif",
+    "index.html": "/NASA/index.html",
+    "main.b8e83012.css.map": "/NASA/static/css/main.b8e83012.css.map",
+    "main.d711ed83.js.map": "/NASA/static/js/main.d711ed83.js.map",
+    "787.37980ae4.chunk.js.map": "/NASA/static/js/787.37980ae4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8e83012.css",
+    "static/js/main.d711ed83.js"
+  ]
+}
