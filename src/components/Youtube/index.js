@@ -18,7 +18,7 @@ const YouTubeSearch = ({ apodTitle }) => {
         "https://www.googleapis.com/youtube/v3/search",
         {
           params: {
-            // key: youtubeApi,
+            key: youtubeApi,
             q: query,
             part: "snippet",
             type: "video",
@@ -39,8 +39,8 @@ const YouTubeSearch = ({ apodTitle }) => {
         <div className="video-item">
           <iframe
             title={`YouTube Video: ${selectedVideo.snippet.title}`}
-            width="760"
-            height="315"
+            width="400"
+            height="400"
             src={`https://www.youtube.com/embed/${selectedVideo.id.videoId}`}
             frameBorder="0"
             allowFullScreen
