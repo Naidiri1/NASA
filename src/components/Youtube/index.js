@@ -18,7 +18,7 @@ const YouTubeSearch = ({ apodTitle }) => {
         "https://www.googleapis.com/youtube/v3/search",
         {
           params: {
-            key: youtubeApi,
+            // key: youtubeApi,
             q: query,
             part: "snippet",
             type: "video",
