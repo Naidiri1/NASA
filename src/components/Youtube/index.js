@@ -40,7 +40,7 @@ const YouTubeSearch = ({ apodTitle }) => {
           <iframe
             title={`YouTube Video: ${selectedVideo.snippet.title}`}
             width="400"
-            height="400"
+            height="450"
             src={`https://www.youtube.com/embed/${selectedVideo.id.videoId}`}
             frameBorder="0"
             allowFullScreen
@@ -52,15 +52,7 @@ const YouTubeSearch = ({ apodTitle }) => {
     }
   }, [video]);
 
-  return (
-    <div className="containers">
-      {videoItem}
-    </div>
-  );
+  return <div className="containers">{videoItem}</div>;
 };
 
 export default YouTubeSearch;
-
-
-
-

@@ -60,13 +60,8 @@ justify-content: center;
 
 }
 .class--image {
-  /* min-width: 350px;
-
-  max-width: 350px;
-  min-height: 380px;
-  height: 100%;
-  max-height: 400px; */
-
-  border-radius: 20%;
+  max-width: 400px;
+  max-height: 450px;
+border-radius: 45px;
  
 }

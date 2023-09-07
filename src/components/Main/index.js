@@ -38,7 +38,7 @@ const Main = () => {
       </p>
       <div id="img-youtube">
         <div>
-          <Card style={{ width: "40rem",border:"none", display:"flex"}}>
+          <Card style={{ width: "40rem",border:"none", display:"flex", alignItems:"center"}}>
             <Card.Img
               className="class--image"
               src={apodData.url}
@@ -55,7 +55,7 @@ const Main = () => {
           </Card>
         </div>
         <div>
-          <Card style={{ width: "40rem", border:"none",  display:"flex"  }}>
+          <Card style={{ width: "40rem", border:"none",  display:"flex", alignItems:"center" }}>
             <Card.Body>
               <YouTubeSearch apodTitle={apodData.title} />
               <Card.Title className="card-title">Video related</Card.Title>
